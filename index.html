@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <title>Portfolio Website-|Jotham|</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        
+        /* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+/* hero background image 
+background: url('images/heroImage.jpeg');
+*/
+.bgimage {
+    height:100vh;
+    background-color:black ;
+    
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+.photo{
+    width: 50dp;
+    height: 50dp;
+    border-radius: 50%;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+    </style>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">jotham</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <div class="profile-photo">
+                        <img src="./images/about2.jpg" alt="Profile Photo" class="rounded-circle">
+                    </div>
+                    <h2 class="hero_title">Hi, it's me Jotham</h2>
+                    <p class="hero_desc">I am a professional freelancer in Nairobi kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about2.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>
+                        My proficiency in web development has enabled me to design and build visually appealing and highly functional websites. Utilizing a range of technologies, such as HTML, CSS, JavaScript, and various web frameworks, I have crafted responsive and user-friendly web applications that provide an engaging and efficient online experience. 
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: jotham micheni</li>
+                                <li>Age: 22</li>
+                                <li>Occupation: Web Developer</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Jotham Murimi</li>
+                                <li>Age: 22</li>
+                                <li>Occupation: Android Developer</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> 
+                            As a skilled Android developer, I have leveraged my expertise to create innovative mobile applications that cater to diverse user needs. With a strong foundation in Java and Firebase, I have developed intuitive and responsive user interfaces, implemented efficient data management strategies, and integrated seamless connectivity with backend services. My Android projects showcase my ability to design scalable and maintainable code, optimize performance, and deliver exceptional user experiences across a wide range of Android devices. Through my work in the Android domain, I have demonstrated my adaptability to emerging technologies, my commitment to best practices, and my passion for delivering high-quality mobile solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fab fa-react' style='color:#61dafb;'></i>
+                            <h4 class="card-title mt-3">Front-End web Development</h4>
+                            <p class="card-text mt-3">
+                                My proficiency in web development has enabled me to design and build visually appealing and highly functional websites. Utilizing a range of technologies, such as HTML, CSS, JavaScript, and React javascript  frameworks, I have crafted responsive and user-friendly web applications that provide an engaging and efficient online experience. 
+
+                            </p>
+                        </div>
+                    </div>  
+
+                    
+             
+             
+             
+             
+           
+            </div>
+
+            <!-- <div class="row"> -->
+              
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fab fa-android' style='color:green;'></i>     
+                             <h4 class="card-title mt-3">Adroind Development</h4>
+                            <p class="card-text mt-3">
+                                As a skilled Android developer, I have leveraged my expertise to create innovative mobile applications that cater to diverse user needs. With a strong foundation in Java and Kotlin, I have developed intuitive and responsive user interfaces, implemented efficient data management strategies, and integrated seamless connectivity with backend services. My Android projects showcase my ability to design scalable and maintainable code, optimize performance, and deliver exceptional user experiences across a wide range of Android devices. Through my work in the Android domain, I have demonstrated my adaptability to emerging technologies, my commitment to best practices, and my passion for delivering high-quality mobile solutions.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            <!-- </div> -->
+        
+                <!-- <div class="row">   -->
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fab fa-react' style='color:#61dafb;'></i> 
+                            <h4 class="card-title mt-3">Machine Learning</h4>
+                            <p class="card-text mt-3">
+                                I have extensive expertise in developing and deploying advanced predictive models using a variety of algorithms and techniques, including neural networks, decision trees, and linear regression. With a strong background in data preprocessing, feature engineering, and model optimization, I have a proven track record of delivering high-performance machine learning solutions that drive valuable insights and business outcomes. My passion for staying at the forefront of machine learning innovations allows me to continually enhance my skills and adapt to the evolving demands of the field.                            </p>
+                        </div>
+                    </div>  
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/disease.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Poutry Disease Detection App</h4>
+                            <p class="card-text">
+                                This project focuses on developing a mobile application that can accurately detect and diagnose various poultry diseases using computer vision and machine learning techniques. The app leverages a Random Forest classification model, trained on a comprehensive dataset of poultry images, to provide real-time disease identification and recommendations for farmers. This innovative solution demonstrates my skills in integrating cutting-edge AI/ML algorithms, designing user-friendly mobile interfaces, and applying data-driven approaches to address pressing challenges in the poultry                  
+                            </p>
+                            <div class="text-center">
+                                <a href=" https://github.com/jothammicheni/Poultry-Disease-Detection-App" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/images.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Smart Salon</h4>
+                            <p class="card-text">
+                                
+                                The smart salon project integrates multiple functionalities to provide a seamless and convenient experience for salon customers. Clients can easily book appointments, purchase products online, and make payments securely through mobile money services like M-Pesa. This project showcases my abilities in developing comprehensive web and mobile-based solutions that enhance customer engagement, streamline salon operations, and leverage emerging technologies to address the evolving needs of the beauty industry
+                            
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/jothammicheni/smart-salon" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/hostel.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Hostel Booking System</h4>
+                            <p class="card-text">
+                                The Hostel Booking System allows students to easily register, book, and pay for rooms in the school's dormitories. It streamlines the housing process by providing a centralized platform to manage student registrations, room availability, and payment processing. This comprehensive system enhances the student experience and improves the efficiency of the hostel administration.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/jothammicheni/Hostel-management-App" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/quotes_generator.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Random Quote Generator</h4>
+                            <p class="card-text">
+                                This React-based random quote generator utilizes APIs to fetch a diverse collection of inspirational and thought-provoking quotes. With the click of a button, users can discover a new quote and share it across various social media platforms. The project showcases my skills in integrating external data sources, building responsive user interfaces, and implementing dynamic content generation using modern front-end frameworks.                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/jothammicheni/RANDOM-QUOTE-GENERATOR" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/chat.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Chating App</h4>
+                            <p class="card-text">
+                                The Chatting App leverages Firebase to enable seamless real-time communication between two users. By integrating Firebase's robust backend services, the app provides a secure and reliable platform for users to engage in instant messaging, fostering smooth and engaging conversations. This project showcases your ability to develop a functional chat application that leverages modern cloud-based technologies.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/jothammicheni/chat-app" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/disease.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Cattle disease prediction model</h4>
+                            <p class="card-text"> 
+                                This project aims to develop a machine learning-based model to accurately predict the onset of various diseases in cattle. By leveraging historical data on cattle health, environmental factors, and herd management practices, the model provides early warning signals to enable proactive intervention and improve overall herd health. The successful implementation of this predictive model demonstrates my skills in data analysis, feature engineering, model development, and integrating AI-powered solutions to address real-world challenges in the agriculture sector.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/jothammicheni/cattle-disease-prediction-model" class="btn btn-success"  target="_blank">View in Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Nyeri&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <!-- <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button> -->
+
+                      <p>Email: <p  style="font-weight: bold;">jothammurimi2001@gmail.com</p></p>
+                      <p>Call: <p style="font-weight: bold;">+254728930152</p></p>
+                      <p>Call: <p  style="font-weight: bold;">+254113730593</p></p>
+
+                      <h1 style="color: rgb(15, 130, 231)" >View my work at</h1>
+
+                      <ul style="margin-top: 5%;">
+                         <li  style="font-weight: bold;" margin-top: 5%><a style="outline: none; " href="https://github.com/jothammicheni">Github projects</a></li>
+                         <li  style="font-weight: bold; margin-top: 5%"><a  style="outline: none;"href="https://resume.github.io/?jothammicheni">Github resume</a></li>
+                      </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
